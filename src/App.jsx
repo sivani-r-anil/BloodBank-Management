@@ -6,6 +6,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddDonor from './componenets/AddDonor'
 import ViewDonor from './componenets/ViewDonor'
+import Home from './componenets/Home'
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<AddDonor/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/add' element={<AddDonor/>}/>
         <Route path='/view' element={<ViewDonor/>}/>
       </Routes>
       </BrowserRouter>
