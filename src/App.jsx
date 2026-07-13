@@ -3,14 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import NavigationBar from './componenets/NavigationBar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AddDonor from './componenets/AddDonor'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<AddDonor/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
