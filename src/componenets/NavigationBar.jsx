@@ -25,7 +25,8 @@ const NavigationBar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
-                            <Link className="nav-link text-white px-3 fw-semibold" to="/">➕ Add Donor</Link>
+                            <Link className="nav-link text-white px-3 fw-semibold" to="/">🩸 Home</Link>
+                            <Link className="nav-link text-white px-3 fw-semibold" to="/add">➕ Add Donor</Link>
                             <Link className="nav-link text-white px-3 fw-semibold" to="/view">🩸 View Donors</Link>
                         </div>
                     </div>
